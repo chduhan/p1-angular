@@ -1,0 +1,15 @@
+<section style="display: flex;">
+  <figure >
+    <img [ngClass]="{ 'duhansPersonalCSS': duhansMi.duhansID === 991701782 }" src="assets/images/{{duhansMi.duhansImage}}" alt="me" class="duhansImage">
+    <figcaption [ngStyle]="{'font-style': 'italic' , 'font-weight': 'bold'}">{{ duhansMi.duhansFullName }}</figcaption>
+  </figure>
+
+  <figure >
+    <img [ngClass]="{ 'duhansCountryCSS': duhansCa.duhansBirthID ===  356 }" src="assets/images/{{duhansCa.duhansCountryFlag}}" alt="flag" class="duhansCountryFlag">
+    <figcaption [ngStyle]="{'font-style': 'italic', 'font-weight': 'bold' }">{{ duhansCa.duhansCountryBirthName }}</figcaption>
+  </figure>
+
+
+  
+ 
+</section>

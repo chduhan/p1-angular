@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<app-header-duhans [duhansChild]="PERduhans" ></app-header-duhans>
+<mat-tab-group mat-stretch-tabs
+class="example-stretched-tabs mat-elevation-z4"
+[ngStyle]="{textAlign: 'center'}">
+<mat-tab> 
+<ng-template mat-tab-label>
+  ME
+  <span class="material-icons">person</span>
+  </ng-template>
+<app-duhans-about [duhansMe]="PERduhans"> </app-duhans-about>
+</mat-tab>
+
+<mat-tab>
+<ng-template mat-tab-label>
+ABOUT
+<span class="material-icons">favorite</span>
+</ng-template>
+<app-duhans-country [duhansData]="CTRYduhans"> </app-duhans-country>
+</mat-tab>
+
+<mat-tab>
+  <ng-template mat-tab-label>
+  PIC
+  <span class="material-icons">camera</span>
+  </ng-template>
+  <app-duhans-pics [duhansMi]="PERduhans" [duhansCa]="CTRYduhans" > </app-duhans-pics>
+  
+  </mat-tab>
+</mat-tab-group>
